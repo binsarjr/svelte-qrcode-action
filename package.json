@@ -1,6 +1,9 @@
 {
 	"name": "svelte-qrcode-action",
-	"version": "0.0.2",
+	"version": "0.0.4",
+	"repository": {
+		"url": "https://github.com/binsarjr/svelte-qrcode-action"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
