@@ -1,6 +1,6 @@
 {
 	"name": "svelte-qrcode-action",
-	"version": "0.0.4",
+	"version": "1.0.0",
 	"repository": {
 		"url": "https://github.com/binsarjr/svelte-qrcode-action"
 	},
@@ -53,5 +53,12 @@
 	},
 	"publishConfig": {
 		"access": "public"
-	}
+	},
+	"keywords": [
+		"qrcode",
+		"qr-code",
+		"qr",
+		"svelte",
+		"sveltekit"
+	]
 }

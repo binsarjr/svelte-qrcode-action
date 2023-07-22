@@ -1,1 +1,1 @@
-export * from "./qrcode.js"
+export * from './qrcode.js';
