@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { qrcode } from '$lib/qrcode.js';
 
-	/** @type {import('qr-code-styling').Options} */
+	/** @type {import('styled-qr-code').Options} */
 	let options = {
 		data: 'okei'
 	};
