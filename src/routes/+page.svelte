@@ -6,21 +6,17 @@
 	let options = {
 		data: 'okei'
 	};
-
-	onMount(() => {
-		setTimeout(() => {
-			options.dotsOptions = {
-				color: '#4267b2',
-				type: 'rounded'
-			};
-		}, 2000);
-	});
+	let color = 'black';
+	$: options['dotsOptions'] = {
+		color
+	};
 </script>
 
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Svelte QrCode Action</h1>
+<p>BTW: I am grateful if anyone wants to make the ui so that it is better to see.</p>
 
+<h2>you can change the value</h2>
 <input bind:value={options.data} />
+<input type="color" bind:value={color} />
 
 <div use:qrcode={options} />
