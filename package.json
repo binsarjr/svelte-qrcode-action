@@ -1,6 +1,6 @@
 {
 	"name": "svelte-qrcode-action",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"repository": {
 		"url": "https://github.com/binsarjr/svelte-qrcode-action"
 	},
