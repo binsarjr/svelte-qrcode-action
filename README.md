@@ -38,3 +38,6 @@ With reactive
 
 <div use:qrcode={options} />
 ```
+
+# Contributing
+need better documentation
