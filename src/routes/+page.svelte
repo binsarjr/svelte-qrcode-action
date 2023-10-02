@@ -4,7 +4,7 @@
 
 	/** @type {import('styled-qr-code').Options} */
 	let options = {
-		data: 'okei'
+		data: 'Hello World'
 	};
 	let color = 'black';
 	$: options['dotsOptions'] = {
@@ -12,11 +12,14 @@
 	};
 </script>
 
-<h1>Svelte QrCode Action</h1>
-<p>BTW: I am grateful if anyone wants to make the ui so that it is better to see.</p>
+<h1 class="text-center my-2">Svelte QrCode Action</h1>
 
-<h2>you can change the value</h2>
-<input bind:value={options.data} />
-<input type="color" bind:value={color} />
+<h2>Fill the value:</h2>
+<div class="input-group mb-4">
+	<input class="form-control" bind:value={options.data} />
+	<input type="color" class="form-control-color input-group-text" bind:value={color} />
+</div>
 
-<div use:qrcode={options} />
+<div class="card">
+  <div class="card-body mx-auto" use:qrcode={options} />
+</div>
